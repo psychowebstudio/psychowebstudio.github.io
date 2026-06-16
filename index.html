@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Psycho Web Studio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3e7d3;
+    background-image: url('https://www.transparenttextures.com/patterns/aged-paper.png');
+    color: #2b1d14;
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* MP4 LOGO STYLE */
+.logo-video {
+    width: 120px;
+    border-radius: 10px;
+    animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+    from { filter: drop-shadow(0 0 5px #2b1d14); }
+    to { filter: drop-shadow(0 0 20px #5a3d2b); }
+}
+
+h1 {
+    font-size: 40px;
+    margin: 10px 0;
+    letter-spacing: 2px;
+}
+
+.tagline {
+    font-size: 18px;
+    color: #5a3d2b;
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.primary {
+    background: #2b1d14;
+    color: white;
+}
+
+.primary:hover {
+    background: #5a3d2b;
+}
+
+.secondary {
+    border: 2px solid #2b1d14;
+    color: #2b1d14;
+}
+
+.secondary:hover {
+    background: #2b1d14;
+    color: white;
+}
+
+/* SECTIONS */
+section {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    border-bottom: 2px solid #2b1d14;
+    padding-bottom: 5px;
+}
+
+/* CONTACT BOX */
+.contact-box {
+    background: rgba(255,255,255,0.4);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #2b1d14;
+    border-radius: 5px;
+}
+
+button {
+    padding: 12px;
+    background: #2b1d14;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5a3d2b;
+}
+
+/* PORTFOLIO */
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.project {
+    background: rgba(255,255,255,0.4);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* FLOATING BUTTON */
+.floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #2b1d14;
+    color: white;
+    padding: 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <!-- MP4 LOGO (VIDEO LOGO) -->
+    <video class="logo-video" autoplay loop muted playsinline>
+        <source src="logo.mp4" type="video/mp4">
+    </video>
+
+    <h1>PSYCHO WEB STUDIO</h1>
+    <p class="tagline">Design • Develop • Grow</p>
+
+    <a href="#contact" class="btn primary">Get a Website</a>
+    <a href="#services" class="btn secondary">View Services</a>
+
+</header>
+
+<section>
+    <h2>About Us</h2>
+    <p>
+        We help businesses build modern, responsive websites that attract customers, increase sales, and grow online visibility.
+    </p>
+</section>
+
+<section id="services">
+    <h2>Services</h2>
+    <ul>
+        <li>Business Websites</li>
+        <li>Landing Pages</li>
+        <li>Website Redesigns</li>
+        <li>E-commerce Websites</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+        <div class="project">Business Website</div>
+        <div class="project">E-commerce Store</div>
+        <div class="project">Landing Page</div>
+    </div>
+</section>
+
+<section>
+    <h2>Get Free Quote</h2>
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Tell us about your project"></textarea>
+        <button type="submit">Send Request</button>
+    </form>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+
+    <div class="contact-box">
+        <p><strong>Email:</strong> psychowebstudio@gmail.com</p>
+
+        <p>
+            <strong>Phone:</strong>
+            <a href="tel:+2347045037068">+234 (704) 503 7068</a>
+        </p>
+
+        <p><strong>TikTok:</strong> @psychowebstudio</p>
+
+        <a class="btn primary" href="mailto:psychowebstudio@gmail.com">Send Email</a>
+
+        <a class="btn secondary"
+           href="https://wa.me/2347045037068"
+           target="_blank">
+           Chat on WhatsApp
+        </a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Psycho Web Studio — All Rights Reserved
+</footer>
+
+<!-- FLOATING CONTACT BUTTON -->
+<a href="https://wa.me/2347045037068"
+   target="_blank"
+   class="floating-btn">
+   💬 Contact
+</a>
+
+</body>
+</html>
